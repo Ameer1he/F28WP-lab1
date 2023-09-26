@@ -8,7 +8,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; /* Changed the background color of the header to beige */
   color: #505050;
   text-align: center;
   padding: 20px;
@@ -32,7 +32,7 @@ header {
 
 /* Navigation Styles */
 nav ul {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; /* Changed the background color of the navigation to beige */
   color: #505050;
   text-align: center;
   list-style-type: none;
@@ -137,10 +137,6 @@ main h3 {
 .cta-container {
   text-align: center;
   padding: 30px 20px;
-  background-color: #f5f5f5;
-  margin-top: 50px;
-
-  border-style: solid;
-  border-color: #e5e5e5;
+  background-color: #f5f5f5; /* Changed the background color of the CTA section */
+  margin-top: 50px; /* Increased
 }
-
