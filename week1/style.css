@@ -3,12 +3,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  color: #323232;
+  color: #505050;
+  font-size: 16px; /* Increased font size */
 }
 
 /* Header Styles */
 header {
-  background-color: #323232;
+  background-color: #282689;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -29,11 +30,10 @@ header {
   display: block;
 }
 
-
 /* Navigation Styles */
 nav ul {
-  background-color: #f5f5f5;
-  color: #323232;
+  background-color: #333;
+  color: #fff;
   text-align: center;
   list-style-type: none;
   margin: 0;
@@ -46,7 +46,7 @@ nav li {
 
 nav a {
   display: block;
-  color: #323232;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -54,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #f5f5f5; /* Darker shade for hover */
+  background-color: #505050; /* Darker shade for hover */
 }
 
 /* Banner Styles */
@@ -65,14 +65,12 @@ nav a:hover {
   height: auto;
   width: 100%;
   overflow: hidden;
-  background-color: #f5f5f5;
 }
 
 .centered-banner {
   padding: 30px;
   max-width: 80%;
   height: auto;
-  background-color: #fff;
 }
 
 /* Main Content Styles */
@@ -80,14 +78,13 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
 }
 
 .services {
   margin: 2rem auto;
   padding: 2rem;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 main h3 {
@@ -107,7 +104,9 @@ main h3 {
   max-width: calc(25% - 20px);
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  align-items: center;
+  text-align: center;
+  margin: 20px; /* Added margin for spacing */
 }
 
 .service-column img {
@@ -141,51 +140,63 @@ main h3 {
   padding: 20px;
   background-color: #f5f5f5;
   margin-top: 30px;
+  border: 1px solid #ccc; /* Added a 1px border */
+}
+
+.cta-title {
+  text-transform: uppercase; /* Convert title to uppercase */
+  font-weight: bold;
+  font-size: 24px; /* Increased font size */
+}
+
+.cta-paragraph {
+  font-size: 18px; /* Increased font size */
+  font-weight: bold; /* Added font weight */
 }
 
 .cta-button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #323232;
+  padding: 15px 30px; /* Increased padding for the button */
+  background-color: #007BFF;
   color: #ffffff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px; /* Rounded button corners */
   font-weight: bold;
   margin-top: 15px;
- transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
- background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Footer Styles */
 footer {
- background-color: #333;
- color: #fff;
- text-align: center;
- padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 footer ul {
- margin: 0;
+  margin: 0;
 }
 
 footer li {
- display: inline-block;
- margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 footer a {
- color: #fff;
- text-decoration: none;
- transition: color 0.3s; /* Smooth transition for hover effect */
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 footer a:hover {
- color: #b3b3b3; /* Lighter color on hover */
+  color: #b3b3b3; /* Lighter color on hover */
 }
 
 footer p {
- margin: 10px 0 0;
+  margin: 10px 0 0;
 }
