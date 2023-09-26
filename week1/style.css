@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  color: #505050;
+  color: #323232;
 }
 
 /* Header Styles */
 header {
-  background-color: #f5f5f5; /* Changed the background color of the header to beige */
-  color: #505050;
+  background-color: #323232;
+  color: #fff;
   text-align: center;
   padding: 20px;
 }
@@ -32,8 +32,8 @@ header {
 
 /* Navigation Styles */
 nav ul {
-  background-color: #f5f5f5; /* Changed the background color of the navigation to beige */
-  color: #505050;
+  background-color: #f5f5f5;
+  color: #323232;
   text-align: center;
   list-style-type: none;
   margin: 0;
@@ -46,7 +46,7 @@ nav li {
 
 nav a {
   display: block;
-  color: #505050;
+  color: #323232;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -54,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #e5e5e5; /* Darker shade of beige for hover */
+  background-color: #f5f5f5; /* Darker shade for hover */
 }
 
 /* Banner Styles */
@@ -65,12 +65,14 @@ nav a:hover {
   height: auto;
   width: 100%;
   overflow: hidden;
+  background-color: #f5f5f5;
 }
 
 .centered-banner {
   padding: 30px;
   max-width: 80%;
   height: auto;
+  background-color: #fff;
 }
 
 /* Main Content Styles */
@@ -78,6 +80,7 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #fff;
 }
 
 .services {
@@ -104,8 +107,7 @@ main h3 {
   max-width: calc(25% - 20px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: #fff;
 }
 
 .service-column img {
@@ -136,7 +138,17 @@ main h3 {
 /* Call to Action Styles */
 .cta-container {
   text-align: center;
-  padding: 30px 20px;
-  background-color: #f5f5f5; /* Changed the background color of the CTA section */
-  margin-top: 50px; /* Increased
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-top: 30px;
 }
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #323232;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top:
