@@ -41,6 +41,10 @@ nav ul {
   margin: 0;
   padding: 20px;
 }
+.active {
+    background-color: #f5f5dc; /* Beige color active about */
+    color: #fff; 
+}
 
 nav li {
   display: inline-block;
