@@ -1,42 +1,45 @@
 // index.js
+// Variables to keep track of the current slide
+let currentSlide = 0;
 
-class Slideshow {
-    constructor() {
-      this.slideIndex = 1;
+// Function to increment/decrement the current slide number
+function updateSlideNumber(direction) {
+  if (direction === 'next') {
+    currentSlide++;
+    if (currentSlide >= document.getElementsByClassName('mySlides').length) {
+      currentSlide = 0;
     }
-  
-    plusSlides(n) {
-      this.showSlides(this.slideIndex += n);
-    }
-  
-    currentSlide(n) {
-      this.showSlides(this.slideIndex = n);
-    }
-  
-    showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("numbertext");
-  
-      if (n > slides.length) {
-        this.slideIndex = 1; // Reset to the first slide if at the end
-      }
-      if (n < 1) {
-        this.slideIndex = slides.length; // Wrap to the last slide if at the beginning
-      }
-  
-      // Hide all slides
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-  
-      // Remove the "active" class from all numbertext elements
-      for (i = 0; i < dots.length; i++) {
-        dots[i].classList.remove("active");
-      }
-  
-      // Display the current slide and set the "active" class to the corresponding numbertext element
-      slides[this.slideIndex - 1].style.display = "block";
-      dots[this.slideIndex - 1].classList.add("active");
+  } else if (direction === 'previous') {
+    currentSlide--;
+    if (currentSlide < 0) {
+      currentSlide = document.getElementsByClassName('mySlides').length - 1;
     }
   }
+  return currentSlide;
+}
+
+// Function to update the slide's visibility
+function updateSlideVisibility(slideNumber) {
+  // Hide all slides
+  const slides = document.getElementsByClassName('mySlides');
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+
+  // Show the current slide
+  slides[slideNumber].style.display = 'block';
+}
+
+// Event listeners for 'next' and 'previous' buttons
+document.querySelector('.next').addEventListener('click', () => {
+  currentSlide = updateSlideNumber('next');
+  updateSlideVisibility(currentSlide);
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  currentSlide = updateSlideNumber('previous');
+  updateSlideVisibility(currentSlide);
+});
+
+// Initially show the first slide
+updateSlideVisibility(currentSlide);

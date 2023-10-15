@@ -241,8 +241,17 @@ position: relative;
 }
 /* Hide the images by default */
 .mySlides {
-display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+.mySlides img {
+  width: 100%;
+  height: 70%;
+
+}
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
 cursor: pointer;
