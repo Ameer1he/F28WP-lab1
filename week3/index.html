@@ -79,7 +79,6 @@
       <a class="next cursor" onclick="plusSlides(1)">&#10095;</a>
   </div>
 
-    <script src="index.js"></script>
 
     
       <!-- Banner Section -->
@@ -147,8 +146,35 @@
         <a href="contact.html" class="cta-button">Contact Us Now</a>
        </section>
     
+    <br>
+    <form id="form">
+      <div class="input-control">
+          <label for ="username">Username:</label>
+          <input type ="text" id="username"  class="error" required>
+          <div class ="error"></div>
+      </div>
+      <div class="input-control">
+          <label for ="email">Email:</label>
+          <input type ="email" id="email"  class="error" required>
+          <div class ="error"></div>
+      </div>
+      <div class="input-control">
+          <label for = "password">Password:</label>
+          <input type ="password" id="password" class="error" minlength="8" required>
+          <div class ="error"></div>
+      </div>   
+      <div class="input-control">
+          <label for ="confirmPassword">Confirm Password:</label>
+          <input type ="password" id="confirmPassword" class="error" required>
+          <div class ="error"></div>
+      </div>
+      <div>
+          <button type ="form button">Submit</button>
+      </div>
+  </form>
+
       </main>
- 
+
  <!-- Footer Section -->
  <footer>
     <ul>
@@ -158,6 +184,7 @@
     </ul>
     <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
+  <script src="index.js"></script>
 </div>
 </body>
 </html>
