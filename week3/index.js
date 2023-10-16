@@ -44,7 +44,7 @@ document.querySelector('.prev').addEventListener('click', () => {
 // Initially show the first slide
 updateSlideVisibility(currentSlide);
 
-const form = document.getElementById("validationForm");
+const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
@@ -52,25 +52,20 @@ const confirmPassword = document.getElementById("confirmPassword");
 
 // Real-time validation for username
 username.addEventListener("blur", () => {
-    // ... (your username validation code)
 });
 
 // Real-time validation for email
 email.addEventListener("blur", () => {
-    // ... (your email validation code)
 });
 
 // Real-time validation for password
 password.addEventListener("blur", () => {
-    // ... (your password validation code)
 });
 
 // Real-time validation for confirm password
 confirmPassword.addEventListener("blur", () => {
-    // ... (your confirm password validation code)
 });
 
 // Form submission
 form.addEventListener("submit", (e) => {
-    // ... (your form submission code)
 });
